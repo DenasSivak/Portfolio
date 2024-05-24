@@ -161,7 +161,6 @@ body{
 @media only screen and (max-width:550px){
     header{
         height: auto;
-        outline: 2px dashed red;
     }
     header div{
     width: 60%;
