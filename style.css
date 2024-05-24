@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+body{
+    font-family: Tahoma;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient( #000000, #0f9b0f );
+}
+ul{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+}
+a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding-top: 18px;
+    margin: 10px;
+    letter-spacing: 3px;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient( #159957, #155799 );
+    text-align: center;
+    padding-top: 30px;
+}
+dotlottie-player{
+    width: 100%;
+    height: 100%;
+}
+header div{
+    width: 40%;
+    height: 50vh;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+h1{
+    color: chartreuse;
+    font-family: "Poetsen One", sans-serif;
+    margin-top: 50px;
+}
+h2{
+    color: white;
+    font-family: "Algerian";
+    margin: 50px;
+    letter-spacing: 5px;
+    
+}
+button{
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-image: linear-gradient(45deg, #00f260, #0575e6 );
+    color: cyan;
+    border-radius: 20px;
+}
+button a{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20px;
+    margin: 0;
+}
+button:hover{
+    box-shadow: 2px 2px 5px cyan;
+}
+section{
+    width: 100%;
+    padding: 40px;
+    height: auto;
+}
+.about{
+    background-image: linear-gradient(#0575e6, #00f260);
+    color: white;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    line-height: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.skills{
+    background-image: linear-gradient(#00f260, #0575e6);
+    color: aquamarine;
+    text-align: center;
+}
+.html, .css, .javascript{
+    width: 200px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: rgba(53, 10, 125, 0.5);
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding: 10px;
+}
+.html img, .css img, .javascript img{
+    width: 150px;
+    height: auto;
+}
+.portfolio{
+    background-image: linear-gradient(#00f260, #057);
+    text-align: center;
+    color: white;
+}
+.contact{
+    background-image: linear-gradient(#00f260, #0575e6);
+    text-align: center;
+}
+.portfolio div{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(53, 10, 125, 0.5);
+    display: inline-block;
+    margin: 30px;
+    padding: 10px
+}
+form, .map{
+    width: 40%;
+    height: 50vh;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+iframe{
+    width: 100%;
+    height: 50vh;
+}
+footer{
+    width: 100%;
+    height: 200px;
+   background-image: linear-gradient(#0f9b0f, #000000);
+    padding-top: 100px;
+}
+footer p{
+    text-align: center;
+}
+body{
+    font-family: "Sedan", serif;
+    color: olivedrab;
+}
+@media only screen and (max-width:550px){
+    header{
+        height: auto;
+        outline: 2px dashed red;
+    }
+    header div{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+    
+}
+
+@media only screen and (max-width:800px){
+    .map{
+        width: 90%;
+    }
+}

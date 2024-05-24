@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+   <h1>Uždek, šviesą</h1>
+   
+   <button onclick="on();">Įjungti</button>
+   
+   <img src="isjunkta.png" id="lempa" width="100">
+   
+   <button onclick="off();">Išjungti</button>
+   
+   <script>
+    function on(){
+        document.getElementById('lempa').src = 'ijunkta.png'
+    };
+       
+       
+       function off(){
+           document.getElementById('lempa').src = 'isjunkta.png';
+       }
+    
+    </script>
+    
+</body>
+</html>

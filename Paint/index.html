@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <canvas id="peisimoLapas" width="500" height="500" onmousemove="piesti(event);"></canvas>
+   
+<!--   onclick="piesti(event);-->
+   <script>
+    let lapas = document.getElementById('peisimoLapas');
+       let piesinys = lapas.getContext('2d');
+       let spalva = prompt('įrašyk savo spalvą');
+       let spalvosPalete = document.getElementById('spalvosPalete');
+       
+       let painting = false;
+       
+       function startPosition(){
+           painting = true;
+       };
+       
+       function finishedPosition(){
+           painting = false;
+           piesinys.beginPath();
+       };
+       
+       function piesti(e){
+           if(!painting) return;
+           
+           piesinys.lineWidth = 5;
+           piesinys.lineCap = 'round';
+           piesinys.strokeStyle = spalva;
+           
+           piesinys.lineTo(e.clientX, e.clientY);
+           piesinys.stroke();
+           piesinys.beginPath();
+           piesinys.moveTo(e.clientX, e.clientY);
+       }
+       
+       lapas.addEventListener('mousedown', startPosition);
+       lapas.addEventListener('mouseup', finishedPosition);
+       lapas.addEventListener('mousemove', piesti);
+           
+    </script>
+    
+</body>
+</html>

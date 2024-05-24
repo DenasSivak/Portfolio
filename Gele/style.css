@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    position: absolute;
+}
+#kair1{
+    width: 100px;
+    height: 80px;
+    border-radius: 0 50px;
+    box-shadow: 0 0 10px blue;
+    margin: 10px;
+}
+#kair2{
+    width: 100px;
+    height: 80px;
+    border-radius: 50px 0;
+    box-shadow: 0 0 10px blue;
+    margin: 10px;
+    top:82px;
+}
+#des1{
+    width: 100px;
+    height: 80px;
+    border-radius: 0 50px;
+    box-shadow: 0 0 10px blue;
+    margin: 10px;
+    left:102px;
+    top:82px;
+}
+#des2{
+    width: 100px;
+    height: 80px;
+    border-radius: 50px 0;
+    box-shadow: 0 0 10px blue;
+    margin: 10px;
+    left:102px;   
+}
+body{
+    text-align: center;
+}
+
+
+
+
+
+
+

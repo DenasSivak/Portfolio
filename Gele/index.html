@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Nuspalvink</h1>
+    
+    <input type="color" id="spalvosPalete">
+    
+  <div class="konteineris">
+      <div class="elementas" id="kair1"></div>
+      <div class="elementas" id="kair2"></div>
+      <div class="elementas"id="des1"></div>
+      <div class="elementas"id="des2"></div>
+  </div>
+  
+   <script>
+       
+      let elementai = document.querySelectorAll('.elementas'); 
+      let spalvosPalete = document.getElementById('spalvosPalete');
+       
+       function keistiFonoSpalva(){
+           let spalva = spalvosPalete;
+           this.style.backgroundColor = spalva.value;
+           
+       };
+       
+       for(let i = 0; i<4; i++){
+           elementai[i].addEventListener('click', keistiFonoSpalva);
+       };
+       
+       
+    
+  </script>
+    
+</body>
+</html>
